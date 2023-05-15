@@ -10,6 +10,7 @@ import { ListEmpleadosComponent } from './components/list-empleados/list-emplead
 import { CreateEditEmpleadoComponent } from './components/create-edit-empleado/create-edit-empleado.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { environment } from 'src/environments/environment';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

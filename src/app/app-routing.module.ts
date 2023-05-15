@@ -13,6 +13,7 @@ const routes: Routes = [
     path: 'create-empleado',
     component: CreateEditEmpleadoComponent,
   },
+  { path: 'edit-empleado/:id', component: CreateEditEmpleadoComponent },
   { path: '**', redirectTo: 'list-empleados', pathMatch: 'full' },
 ];
 
